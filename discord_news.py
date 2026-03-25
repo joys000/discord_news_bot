@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 
 # 1. 설정: GitHub Actions의 'env' 설정과 이름을 맞췄습니다.
-DISCORD_WEBHOOK_URL = os.environ.get('NEWS') 
+DISCORD_WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK') 
 RSS_URL = "https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko"
 DB_FILE = "sent_links.txt"
 
