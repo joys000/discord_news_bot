@@ -21,7 +21,7 @@ jobs:
         run: pip install feedparser requests
       - name: Run Python script
         env:
-          DISCORD_WEBHOOK: ${{ secrets.NEWSBOT }}
+          NEWSBOT: ${{ secrets.NEWSBOT }}
         run: python discord_news.py
       - name: Update Memory
         run: |
