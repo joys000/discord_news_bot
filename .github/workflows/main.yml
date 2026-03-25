@@ -28,6 +28,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add sent_links.txt
+          # 변경사항이 있을 때만 커밋
           git commit -m "Update memory [skip ci]" || echo "No changes"
+          # 충돌 방지를 위해 서버 데이터를 먼저 가져옴
           git pull --rebase origin main
-          git push
+          # 안전하게 푸시
+          git push origin main
