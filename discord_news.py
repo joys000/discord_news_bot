@@ -6,7 +6,7 @@ from datetime import datetime
 
 # 1. 설정
 RSS_URL = "https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko"
-DISCORD_WEBHOOK_URL = "여기에_디스코드_웹훅_주소를_넣으세요"
+DISCORD_WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK')
 DB_FILE = "sent_links.txt"
 
 # 2. 키워드별 색상 매핑 (10진수 색상 코드 사용)
