@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Python script
         env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_WEBHOOK: ${{ secrets.NEWS }}
         run: python discord_news.py
 
       - name: Update Memory (sent_links.txt)
