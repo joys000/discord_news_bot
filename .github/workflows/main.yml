@@ -2,7 +2,7 @@ name: NEWS
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/10 * * * *'
   workflow_dispatch:      # 이 줄이 있어야 'Run workflow' 버튼이 생깁니다!
 
 jobs:
